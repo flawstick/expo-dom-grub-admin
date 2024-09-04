@@ -84,7 +84,7 @@ function DOMLink({
   navigate,
   ...props
 }: {
-  navigate: typeof import("expo-router").router["navigate"];
+  navigate: (typeof import("expo-router").router)["navigate"];
 } & import("expo-router").LinkProps<any>) {
   return (
     <Link
@@ -105,7 +105,7 @@ function DOMLink({
 export default function Dashboard({
   navigate,
 }: {
-  navigate: typeof import("expo-router").router["navigate"];
+  navigate: (typeof import("expo-router").router)["navigate"];
 }) {
   return (
     <TooltipProvider>
@@ -116,7 +116,7 @@ export default function Dashboard({
           <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
             <DOMLink
               navigate={navigate}
-              href="/"
+              href="/profile"
               className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
             >
               <Package2 className="h-4 w-4 transition-all group-hover:scale-110" />
@@ -205,7 +205,7 @@ export default function Dashboard({
                 <nav className="grid gap-6 text-lg font-medium">
                   <DOMLink
                     navigate={navigate}
-                    href="/"
+                    href="/profile"
                     className="group flex h-10 w-10 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:text-base"
                   >
                     <Package2 className="h-5 w-5 transition-all group-hover:scale-110" />
@@ -221,7 +221,7 @@ export default function Dashboard({
                   </DOMLink>
                   <DOMLink
                     navigate={navigate}
-                    href="/products"
+                    href="/profile"
                     className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                   >
                     <Package className="h-5 w-5" />

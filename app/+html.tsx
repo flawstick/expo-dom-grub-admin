@@ -29,9 +29,10 @@ body {
 #root {
   display: flex;
   height: 100%;
+  background-color: #fff;
   flex: 1;
 }
-    
+
     `,
           }}
         />
