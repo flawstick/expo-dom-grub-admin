@@ -57,7 +57,7 @@ export default function AllMonthlyPayments({
       "דצמבר",
     ];
 
-    return `${monthNames[month - 2]} ${year}`;
+    return `${monthNames[month]} ${year}`;
   };
 
   return (
